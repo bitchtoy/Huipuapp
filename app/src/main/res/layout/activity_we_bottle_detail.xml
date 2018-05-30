@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_index"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/F4F4F4"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.huipuapp.activity.IndexActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#393A3E">
+
+
+        <ImageView
+            android:id="@+id/iv_activity_we_bottle_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/uj" />
+
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#322e2e" />
+
+
+        <TextView
+            android:id="@+id/tv_activity_we_bottle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:text="我的瓶子"
+            android:textColor="@color/write"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="我的瓶子"
+            android:textColor="@color/write"
+            android:textSize="18sp"
+            android:visibility="gone" />
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/wechat_person"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_activity_we_bottle_detail_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015"
+        android:background="@drawable/time_bg"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/write"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/iv_activity_we_bottle_detail_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/zl"/>
+
+
+    <TextView
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:id="@+id/tv_activity_we_bottle_detail_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="5dp"
+        android:paddingRight="10dp"
+        android:layout_marginRight="55dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/yi"/>
+
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+  </LinearLayout>
+</LinearLayout>
+
+<ImageView
+    android:id="@+id/input_bar"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:src="@mipmap/input"/>
+
+
+</RelativeLayout>
+
+
